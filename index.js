@@ -10,8 +10,14 @@ for(let i=0;i<total;i++) {
         let audio = new Audio("sounds/tom-" + (i+1) +".mp3");
         audio.play();
 
-        this.style.color = 'white';
 
+        let drum = this;
+        drum.style.color = 'white';
+        setTimeout(function () {
+            drum.style.color = '#DA0463';
+        }, 350);
+
+        
         });
 
 }
